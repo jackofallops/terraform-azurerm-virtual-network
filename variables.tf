@@ -27,3 +27,9 @@ variable "resource_group_name" {
   description = "(Required) Specifies the name of the resource group the Virtual Network is located in.  This will be created dynamically if not explicitly set"
   default     = ""
 }
+
+variable "tags" {
+  description = "Map of additional tags to apply to the resources"
+  type        = "map"
+  default     = {}
+}
